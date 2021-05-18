@@ -23,7 +23,11 @@ var carDetails = {
 
 //Code Here
 
-
+const { color, make, model, year } = carDetails;
+console.log(carDetails.color);
+console.log(carDetails.make);
+console.log(carDetails.model);
+console.log(carDetails.year);
 
 ////////// PROBLEM 2 //////////
 
@@ -54,8 +58,22 @@ function greeting( obj ) {
 */
 
 //Code Here
+var totalPopulation = {
+  utah: 8000,
+  california: 10000,
+  texas: 5000,
+  arizona: 3000
+}
 
+let utah = totalPopulation.utah;
+let california = totalPopulation.california;
+let texas = totalPopulation.texas;
+let arizona = totalPopulation.arizona;
 
+console.log(utah);
+console.log(california);
+console.log(texas);
+console.log(arizona);
 
 ////////// PROBLEM 4 //////////
 
@@ -68,6 +86,12 @@ function greeting( obj ) {
 */
 
 //Code Here
+
+let ingredients = {
+  carb: [],
+  fat: [],
+  protein: [],
+}
 
 
 
@@ -98,5 +122,4 @@ function greeting( obj ) {
 */
 
 //Code Here
-
 
