@@ -23,11 +23,7 @@ var carDetails = {
 
 //Code Here
 
-const { color, make, model, year } = carDetails;
-console.log(carDetails.color);
-console.log(carDetails.make);
-console.log(carDetails.model);
-console.log(carDetails.year);
+const saveCarDetails 
 
 ////////// PROBLEM 2 //////////
 

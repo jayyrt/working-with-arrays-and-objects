@@ -40,7 +40,7 @@ for(var key in values) {
 */
 
 function showValues( obj ) {
-  for (//Code Here
+  for ( )//Code Here
 }
 
 
@@ -102,6 +102,7 @@ for(var key in deleteAllThethings) {
 console.log(deleteAllThethings)
 
 
+//COMPLETE
 
 ////////// PROBLEM 5 //////////
 
@@ -119,6 +120,8 @@ var removePassword = {
 delete removePassword['password'];
 
 console.log(removePassword)
+
+//COMPLETE
 
 ////////// PROBLEM 6 //////////
 
@@ -143,6 +146,8 @@ for (var i = 0; i < largeNumbers.length; i++){
   delete deleteTheBigNumbers[ largeNumbers[i] ];
 }
 
+//COMPLETE
+
 ////////// PROBLEM 7 //////////
 
 /*
@@ -154,15 +159,18 @@ for (var i = 0; i < largeNumbers.length; i++){
 
 //Code Here
 
-var startsWithK = {
-  first = 'Kenia',
-  second = 'Trevor',
-  third = 'Kira',
-  fourth = 'Oscar',
-  fifth = 'Kate',
+const nameArray = ["Kenia", "Trevor", "Kira", "Oscar", "Kate"]
+
+
+const startsWithK = (arr) => {
+  let filteredNames = arr.filter(element => element.startsWith('K'))
+  return filteredNames
 }
 
+startsWithK(nameArray)
 
+
+//COMPLETE
 
 ////////// PROBLEM 8 //////////
 
