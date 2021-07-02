@@ -23,7 +23,10 @@ var carDetails = {
 
 //Code Here
 
-const saveCarDetails 
+let carColor = carDetails.color;
+let carMake = carDetails.make;
+let carModel = carDetails.model;
+let carYear = carDetails.year; 
 
 ////////// PROBLEM 2 //////////
 
@@ -35,13 +38,17 @@ const saveCarDetails
 
 function greeting( obj ) {
   //Code Here
-  
+  let obj = {
+    firstName: 'Kenia',
+    lastName: 'Romero',
+    title: 'Miss'
+  }
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
 
-
+greeting(obj);
 
 ////////// PROBLEM 3 //////////
 
@@ -54,7 +61,7 @@ function greeting( obj ) {
 */
 
 //Code Here
-var totalPopulation = {
+let totalPopulation = {
   utah: 8000,
   california: 10000,
   texas: 5000,
@@ -64,12 +71,11 @@ var totalPopulation = {
 let utah = totalPopulation.utah;
 let california = totalPopulation.california;
 let texas = totalPopulation.texas;
-let arizona = totalPopulation.arizona;
+let arizona = totalPopulation.arizona
 
-console.log(utah);
-console.log(california);
-console.log(texas);
-console.log(arizona);
+function add(totalPopulation){
+  return utah + california + texas + arizona;
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -84,12 +90,16 @@ console.log(arizona);
 //Code Here
 
 let ingredients = {
-  carb: [],
-  fat: [],
-  protein: [],
+  carb: '100 carbs',
+  fat: '25 fats',
+  protein: '25 proteins',
 }
 
+function newIngredients(ingredients){
+    return ([ ingredients.carb, ingredients.fat, ingredients.protein ])
+}
 
+newIngredients(ingredients);
 
 ////////// PROBLEM 5 //////////
 
@@ -107,7 +117,17 @@ let ingredients = {
 
 //Code Here
 
+let numbers = {
+  first: 10,
+  second: 18,
+  third: 23
+}
 
+function largeNumbers(numbers) {
+  return numbers.first
+}
+
+largeNumbers(numbers);
 
 ////////// PROBLEM 6 //////////
 
@@ -119,3 +139,14 @@ let ingredients = {
 
 //Code Here
 
+let letters = {
+  a: [1, 2, 3, 4, 5], 
+  b: [6, 7, 8, 9, 10],
+  c: [11, 12, 13, 14, 15, 16]
+}
+
+function numberGroups(letters){
+ return c
+}
+
+numberGroups(letters);
