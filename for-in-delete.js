@@ -39,11 +39,13 @@ for(var key in values) {
   Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
 */
 
-function showValues( obj ) {
-  for ( )//Code Here
+function showValues() {
+  for (let key in values){
+    console.log(object.assign(values[key]))
+  }
 }
 
-
+//COMPLETE
 
 ////////// PROBLEM 2 //////////
 
@@ -52,10 +54,17 @@ function showValues( obj ) {
   Write a for in loop that loops over the object and changes any value that is greater than 10 to 0. 
   Return the updated object.
 */
+let numbers = [10, 15, 6, 3, 77, 55, 30, 5]
+//ANSWER
+function greaterThan10() {
+  for (let i=0; i < 10; i++){
+    if (key.includes(i < 10)) {
+      numbers[key] = 0
+    }
+  } 
+}
 
-//Code Here
-var greaterThan10 = [10, 20, 30, 40]
-
+//HELP
 
 ////////// PROBLEM 3 //////////
 
@@ -65,9 +74,15 @@ var greaterThan10 = [10, 20, 30, 40]
   Return the updated object.
 */
 
-//Code Here
+//ANSWER
 
+function double() {
+  for (let key in numbers){
+    return (key * 2)
+  }
+}
 
+//COMPLETE
 
 ////////// PROBLEM 4 //////////
 
@@ -79,9 +94,12 @@ var greaterThan10 = [10, 20, 30, 40]
   By the end of the for in loop, you should have a sentence, return that sentence.
 */
 
-//Code Here
+//ANSWER
 
-
+function secrets(){
+  let names = '',
+}
+ 
 
 /* 
   Sometimes it's needed to delete object properties. 
@@ -111,7 +129,7 @@ console.log(deleteAllThethings)
   Delete the property password and return the object.
 */
 
-//Code Here
+//ANSWER
 
 var removePassword = {
   password: 'thepassword'
@@ -138,12 +156,12 @@ var deleteTheBigNumbers = {
   Write a for in loop that deletes every property from the object deleteTheBigNumbers whose value is greater than 100.
 */
 
-//Code Here
+//ANSWER
 
 var largeNumbers = ['third', 'fourth'];
 
 for (var i = 0; i < largeNumbers.length; i++){
-  delete deleteTheBigNumbers[ largeNumbers[i] ];
+  delete deleteTheBigNumbers(largeNumbers[i]);
 }
 
 //COMPLETE
