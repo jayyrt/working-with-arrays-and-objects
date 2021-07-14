@@ -96,10 +96,20 @@ function double() {
 
 //ANSWER
 
+
 function secrets(){
-  let names = '',
+  const names = [Shanae, Kenia, Sasha, Judith, Oscar, Sherry];
+
+  let sentence = 'is amazing!';
+
+  for (let key in names){
+    if (key.includes('sh')){
+      return names + sentence
+    }
+  }
 }
- 
+
+//COMPLETE
 
 /* 
   Sometimes it's needed to delete object properties. 
@@ -201,8 +211,17 @@ startsWithK(nameArray)
   (hint: the method includes() may be of use...)
 */
 
-//Code Here
+//ANSWER
 
-var hiddenTreasure = {
+const treasureStuff = ['treasure box', 'treasure chest', 'coins', 'bottles', 'documents']
 
+function hiddenTreasure(){
+ for (let key in treasureStuff){
+   if (key.includes('treasure')){
+     return treasureStuff + 'is part of my hidden treasure!'
+   }
+   else delete treasureStuff
+ }
 }
+
+//COMPLETE
